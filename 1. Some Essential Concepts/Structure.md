@@ -15,3 +15,8 @@ struct strucutre_name
   <datatype> variable;
 }
 ```
+
+For defining a variable of structure type we need to follow following insede main
+```
+struct structure_name variable_name;
+```
