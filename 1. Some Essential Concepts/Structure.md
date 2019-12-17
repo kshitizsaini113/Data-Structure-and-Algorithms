@@ -22,3 +22,5 @@ struct structure_name variable_name;
 ```
 
 Structure is stored inside *Stack* in the main memory.
+
+We use **dot operator(.)** to access the members of a structure.
