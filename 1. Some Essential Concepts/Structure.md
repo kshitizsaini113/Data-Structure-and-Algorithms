@@ -20,3 +20,5 @@ For defining a variable of structure type we need to follow following insede mai
 ```
 struct structure_name variable_name;
 ```
+
+Structure is stored inside *Stack* in the main memory.
