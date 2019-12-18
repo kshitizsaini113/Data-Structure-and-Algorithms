@@ -7,3 +7,5 @@ Refrence is a nickname (alias) given to a variable.
 ```
 <datatype> &variable_name
 ```
+
+Using refrence we have two names for the same memory location.
