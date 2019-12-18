@@ -9,3 +9,7 @@ Refrence is a nickname (alias) given to a variable.
 ```
 
 Using refrence we have two names for the same memory location.
+
+Why refrence...?
+
+* Useful in parameter pasing.
