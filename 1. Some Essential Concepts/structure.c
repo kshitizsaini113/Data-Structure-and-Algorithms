@@ -13,6 +13,8 @@ int main()
   //Declaring structure type variable
   struct rectangle re={10,5};
   //Declaring and initialising structure type variable
+  printf("Area of rectangle is : %d",re.length*re.breadth);
+  printf("\n");
   re.length=15;
   re.breadth=10;
   printf("Area of rectangle is : %d",re.length*re.breadth);
