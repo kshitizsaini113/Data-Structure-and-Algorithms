@@ -16,7 +16,7 @@ struct strucutre_name
 }
 ```
 
-For defining a variable of structure type we need to follow following insede main
+For defining a variable of structure type we need to follow following inside main
 ```
 struct structure_name variable_name;
 ```
