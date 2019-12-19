@@ -21,6 +21,8 @@ Data Structure and Algorithms
 |   ├── structure.c                       # Structure code in C
 │   └── structure.md                      # Information for structure
 |
+├── DatastructureandAlgorithm.png         # Thumbnail for readme
+│
 ├── LICENSE                               # License for use
 │
 └── README.md                             # Readme file
