@@ -14,6 +14,11 @@ void initialize(struct rectangle *r, int l, int b)
   r->bredth=b;
 }
 
+void changelength(struct rectangle *r, int l)
+{
+  r->length=l
+}
+
 int area(struct rectangle r)
 {
   return r.length*r.bredth;
@@ -25,5 +30,7 @@ int main()
 
   initialize(&r,10,5);
   cout<<area(r);
+
+  changelength(&r,20);
   return 0;
 }
