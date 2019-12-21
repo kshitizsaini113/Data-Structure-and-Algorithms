@@ -29,8 +29,11 @@ int main()
   struct rectangle r;
 
   initialize(&r,10,5);
+  //pointing to structure
   cout<<area(r);
+  //have its copy of data
 
   changelength(&r,20);
+  //pointing to structure
   return 0;
 }
