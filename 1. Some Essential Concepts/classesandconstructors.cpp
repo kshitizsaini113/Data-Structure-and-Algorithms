@@ -33,6 +33,25 @@ class rectangle
     ~rectangle(); //Destructor
 };
 
+rectangle::rectangle(int l, int b)
+{
+  length=l;
+  bredth=b;
+}
+
+int rectangle::area()
+{
+  return length*bredth;
+}
+
+int rectangle::perimeter()
+{
+  return 2*(length+bredth);
+}
+
+rectangle::~rectangle()
+{}
+
 int main()
 {
   return 0;
