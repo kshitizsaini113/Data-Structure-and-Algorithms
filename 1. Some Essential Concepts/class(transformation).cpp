@@ -2,38 +2,37 @@
 
 using namespace std;
 
-struct rectangle
+class rectangle
 {
+private:
   int length;
   int bredth;
+
+public:
+  void initialize(int l, int b)
+  {
+    length=l;
+    bredth=b;
+  }
+
+  void changelength(int l)
+  {
+    length=l;
+  }
+
+  int area()
+  {
+    return length*bredth;
+  }
+
 };
-
-void initialize(struct rectangle *r, int l, int b)
-{
-  r->length=l;
-  r->bredth=b;
-}
-
-void changelength(struct rectangle *r, int l)
-{
-  r->length=l
-}
-
-int area(struct rectangle r)
-{
-  return r.length*r.bredth;
-}
 
 int main()
 {
-  struct rectangle r;
+  rectangle r;
 
-  initialize(&r,10,5);
-  //pointing to structure
-  cout<<area(r);
-  //have its copy of data
-
-  changelength(&r,20);
-  //pointing to structure
+  r.initialize(10,5);
+  cout<<r.area();
+  r.changelength(20);
   return 0;
 }
