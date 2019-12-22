@@ -9,11 +9,21 @@ private:
   int bredth;
 
 public:
+
+  rectangle(int l, int b)
+  {
+    length=l;
+    bredth=b;
+  }
+  //Constructor
+
+  /*
   void initialize(int l, int b)
   {
     length=l;
     bredth=b;
   }
+  */
 
   void changelength(int l)
   {
@@ -29,9 +39,9 @@ public:
 
 int main()
 {
-  rectangle r;
+  rectangle r(10,5);
 
-  r.initialize(10,5);
+  //r.initialize(10,5);
   cout<<r.area();
   r.changelength(20);
   return 0;
