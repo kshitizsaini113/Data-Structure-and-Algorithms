@@ -9,7 +9,12 @@ class rectangle
     int bredth;
 
   public:
-    
+    rectangle()
+    {
+      length=bredth=1;
+    }
+    rectangle(int l, int b);
+    int area();
 };
 
 int main()
