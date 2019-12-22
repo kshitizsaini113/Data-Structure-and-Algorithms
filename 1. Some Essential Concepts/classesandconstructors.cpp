@@ -54,5 +54,10 @@ rectangle::~rectangle()
 
 int main()
 {
+  rectangle r(10,5);
+  cout<<r.area()<<endl;
+  cout<<r.perimeter()<<endl;
+  r.setlength(20);
+  cout<<r.getlength()<<endl;
   return 0;
 }
