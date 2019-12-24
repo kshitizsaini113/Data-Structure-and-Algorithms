@@ -8,6 +8,7 @@ void fun1(int n)
     fun1(n-1);
   }
 }
+//Tail Recursion
 
 void fun2(int n)
 {
@@ -17,6 +18,7 @@ void fun2(int n)
     printf("%d ",n);
   }
 }
+//Head Recursion
 
 int main()
 {
