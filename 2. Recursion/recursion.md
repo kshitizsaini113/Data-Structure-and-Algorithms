@@ -52,3 +52,33 @@ void fun1(int n)
 ```
 
 In case of tail recursion, ***loops*** are more efficient as their space complexity is less. Here, in the given case the complexity of tail recursion is O(n) while that of loop is O(1), as recursive function creates seperate memory stack for each time.
+
+## Head Recursion
+
+If a recursive function is calling itself and the recursive call is the first statement in a function then it is called **Head Recursion.** There is no operation before the function call.(i.e *there is no precessing at the time of calling but only at the time of returning*)
+
+```
+void fun2(int n)
+{
+  if(n>0)
+  {
+    fun2(n-1);
+    printf("%d ",n);
+  }
+}
+```
+
+> Converting to loop
+```
+void fun2(int n)
+{
+int i=1;
+  while(i<=n)
+  {
+    printf("%d ",i);
+    i++;
+  }
+}
+```
+
+In case of head recursion, ***loops*** are not easy to be converted to, but head recursion *can be converted* to loops.
