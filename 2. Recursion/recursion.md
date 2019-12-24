@@ -147,3 +147,25 @@ void funB(int n)
 <div align="center">
   <img src="https://github.com/kshitizsaini113/Data-Structure-and-Algorithms/blob/master/2.%20Recursion/indirect_recursion.PNG">
 </div>
+
+## Nested Recursion
+
+In a nested recursion recursive function will pass parameter as a recursive call. As parameter here is itself a recursive call, so unless the result of interior recursive call is obtained, exterior recursive call's result can't be obtained.
+
+```
+int fun(int n)
+{
+  if(n>100)
+  {
+    return n-10;
+  }
+  else
+  {
+    return fun(fun(n+1));
+  }
+}
+```
+
+<div align="center">
+  <img src="https://github.com/kshitizsaini113/Data-Structure-and-Algorithms/blob/master/2.%20Recursion/nested_recursion.PNG">
+</div>
