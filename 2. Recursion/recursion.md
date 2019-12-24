@@ -143,3 +143,7 @@ void funB(int n)
   }
 }
 ```
+
+<div align="center">
+  <img src="https://github.com/kshitizsaini113/Data-Structure-and-Algorithms/blob/master/2.%20Recursion/indirect_recursion.PNG">
+</div>
