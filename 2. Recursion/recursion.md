@@ -38,3 +38,17 @@ void fun1(int n)
   }
 }
 ```
+
+> Converting to loop
+```
+void fun1(int n)
+{
+  while(n>0)
+  {
+    printf("%d ",n);
+    n--;
+  }
+}
+```
+
+In case of tail recursion, ***loops*** are more efficient as their space complexity is less. Here, in the given case the complexity of tail recursion is O(n) while that of loop is O(1), as recursive function creates seperate memory stack for each time.
