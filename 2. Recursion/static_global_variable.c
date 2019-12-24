@@ -22,6 +22,17 @@ int fun1(int n)
 }
 //Using static variable type.
 
+int fun2(int n)
+{
+  if(n>0)
+  {
+    y++;
+    return fun2(n-1)+y;
+  }
+  return 0;
+}
+//Using global variable.
+
 int main()
 {
   int a=5;
@@ -29,4 +40,6 @@ int main()
   printf("%d",fun(a));
   printf("\n");
   printf("%d",fun1(a));
+  printf("\n");
+  printf("%d",fun2(a));
 }
