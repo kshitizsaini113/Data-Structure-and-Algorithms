@@ -120,3 +120,26 @@ On passing 3, we will first print value and make recursive call.
 <div align="center">
   <img src="https://github.com/kshitizsaini113/Data-Structure-and-Algorithms/blob/master/2.%20Recursion/tree_recursion.PNG">
 </div>
+
+## Indirect Recursion
+
+In indirect recursion, there are *more than one function* ***calling one another in a circular fashion.***
+
+```
+void funA(int n)
+{
+  if(n>0)
+  {
+    printf("%d",n);
+    funB(n-1);
+  }
+}
+void funB(int n)
+{
+  if(n>0)
+  {
+    printf("%d",n);
+    funA(n/2);
+  }
+}
+```
