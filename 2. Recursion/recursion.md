@@ -23,3 +23,18 @@ void main()
 ```
 
 Function part after calling will be executed after all the calling have been made.
+
+## Tail Recursion
+
+If a recursive function is calling itself and the recursive call is the last statement in a function then it is called **Tail Recursion.**
+
+```
+void fun1(int n)
+{
+  if(n>0)
+  {
+    printf("%d ",n);
+    fun1(n-1);
+  }
+}
+```
