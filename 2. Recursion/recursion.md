@@ -82,3 +82,41 @@ int i=1;
 ```
 
 In case of head recursion, ***loops*** are not easy to be converted to, but head recursion *can be converted* to loops.
+
+## Linear Recursion
+
+If a recursive function is calling itself only one time then it is called **Linear Recursion.** Head as well as tail recursion are a part of linear recursion.
+
+```
+void fun(int n)
+{
+  if(n>0)
+  {
+    printf("%d ",n);
+    fun(n-1);
+    printf("%d ",n);
+  }
+}
+```
+
+## Tree Recursion
+
+If a recursive function is calling itself more than one time then it is called **Tree Recursion.**
+
+```
+void fun(int n)
+{
+  if(n>0)
+  {
+    printf("%d ",n);
+    fun(n-1);
+    fun(n-1);
+  }
+}
+```
+
+On passing 3, we will first print value and make recursive call.
+
+<div align="center">
+  <img src="https://github.com/kshitizsaini113/Data-Structure-and-Algorithms/blob/master/2.%20Recursion/tree_recursion.PNG">
+</div>
