@@ -76,7 +76,7 @@ $ git push -u origin branchname
 ```
 6. Create a pull request to the upstream repository.
 
-# Synchronize forked repository with Main repository
+## Synchronize forked repository with Main repository
 
 1. Create upstream as our repository
 ```
