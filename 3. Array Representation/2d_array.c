@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -11,10 +12,20 @@ int main()
   //Declaring 2-d array type 1
 
   int *c[3];
-  c[0]=new int[4];
-  c[1]=new int[4];
-  c[2]=new int[4];
+  int **d;
+
+  c[0]=(int *)malloc(4*sizeof(int));
+  c[1]=(int *)malloc(4*sizeof(int));
+  c[2]=(int *)malloc(4*sizeof(int));
   //Declaring 2-d array type 2
+
+  d=(int **)malloc(3*sizeof(int));
+  d[0]=(int *)malloc(4*sizeof(int));
+  d[1]=(int *)malloc(4*sizeof(int));
+  d[2]=(int *)malloc(4*sizeof(int));
+  //Declaring 2-d array type 3
+
+  //In type 2 and type 3 array is created in Heap.
 
   return 0;
 }
