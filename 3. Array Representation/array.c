@@ -29,5 +29,10 @@ int main()
   }
   printf("\n");
 
+  printf("%d\n",b[2]);
+  printf("%d\n",2[b]);
+  printf("%d\n",*(b+2));
+  //Different ways of accessing array elements.
+
   return 0;
 }
