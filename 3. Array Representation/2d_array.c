@@ -13,17 +13,43 @@ int main()
 
   int *c[3];
   int **d;
+  int i,j;
+
+  for(i=0;i<3;i++)
+  {
+    for(j=0;j<4;j++)
+    {
+      printf("%d ",b[i][j]);
+    }
+    printf("\n");
+  }
 
   c[0]=(int *)malloc(4*sizeof(int));
   c[1]=(int *)malloc(4*sizeof(int));
   c[2]=(int *)malloc(4*sizeof(int));
   //Declaring 2-d array type 2
+  for(i=0;i<3;i++)
+  {
+    for(j=0;j<4;j++)
+    {
+      printf("%d ",c[i][j]);
+    }
+    printf("\n");
+  }
 
   d=(int **)malloc(3*sizeof(int));
   d[0]=(int *)malloc(4*sizeof(int));
   d[1]=(int *)malloc(4*sizeof(int));
   d[2]=(int *)malloc(4*sizeof(int));
   //Declaring 2-d array type 3
+  for(i=0;i<3;i++)
+  {
+    for(j=0;j<4;j++)
+    {
+      printf("%d ",d[i][j]);
+    }
+    printf("\n");
+  }
 
   //In type 2 and type 3 array is created in Heap.
 
