@@ -19,8 +19,8 @@ int main()
   }
   //Memory in stack
 
-  p=new int[5];
-  //Memory in heap
-
+  p= (int *)malloc(5*sizeof(int))
+  //Heap memory
+  
   return 0;
 }

@@ -7,6 +7,7 @@ int main()
   int n;
   cin>>n;
   int arr[n];
+  int *p;
 
   for(int i=0;i<n;i++)
   {
@@ -18,6 +19,11 @@ int main()
   {
     cout<<arr[i]<<"   ";
   }
+  //Stack Memory
+
+  p=new int[5];
+  //Memory in heap
+
 
   return 0;
 }
