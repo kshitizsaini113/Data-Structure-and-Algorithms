@@ -24,6 +24,7 @@ int main()
   p=new int[5];
   //Memory in heap
 
+  delete []p;
 
   return 0;
 }

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -19,8 +20,10 @@ int main()
   }
   //Memory in stack
 
-  p= (int *)malloc(5*sizeof(int))
+  p= (int *)malloc(5*sizeof(int));
   //Heap memory
-  
+
+  free(p);
+
   return 0;
 }
