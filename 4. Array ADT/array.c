@@ -21,6 +21,7 @@ void display(struct Array arr)
 int main()
 {
   struct Array arr;
+  struct Array ar={{2,3,4,5,6},20,5};
   int n,i;
 
   printf("Enter size of array : ");
@@ -39,6 +40,8 @@ int main()
   arr.length=n;
 
   display(arr);
-  
+
+  display(ar);
+
   return 0;
 }
