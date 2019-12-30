@@ -17,6 +17,15 @@ void Display(struct Array arr)
   }
 }
 
+void Append(struct Array *arr,int x)
+{
+  if(arr->length<arr->size)
+  {
+    arr->A[arr->length++]=x;
+  }
+}
+
+
 int main()
 {
   return 0;
