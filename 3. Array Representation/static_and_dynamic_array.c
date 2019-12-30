@@ -5,6 +5,7 @@ int main()
   int n,i;
   scanf("%d",&n);
   int arr[n];
+  int *p;
 
   for(i=0;i<n;i++)
   {
@@ -16,6 +17,10 @@ int main()
   {
     printf("%d   ",arr[i]);;
   }
+  //Memory in stack
+
+  p=new int[5];
+  //Memory in heap
 
   return 0;
 }
