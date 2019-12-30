@@ -11,10 +11,14 @@ int main()
     cin>>p[i];
   }
 
+  cout<<endl<<endl;
+
   for(int i=0;i<5;i++)
   {
     cout<<p[i]<<"   ";
   }
+
+  cout<<endl<<endl;
 
   int *q = new int[10];
 
@@ -28,6 +32,13 @@ int main()
   p=q;
 
   q=NULL;
+
+  for(int i=0;i<5;i++)
+  {
+    cout<<p[i]<<"   ";
+  }
+
+  cout<<endl<<endl;
 
   return 0;
 }
