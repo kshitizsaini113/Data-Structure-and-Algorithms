@@ -44,6 +44,6 @@ int main()
   Append(&arr1,10);
   Insert(&arr1,0,12);
   Display(arr1);
-  
+
   return 0;
 }
