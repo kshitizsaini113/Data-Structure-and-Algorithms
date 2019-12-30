@@ -39,7 +39,7 @@ int main()
   struct Array arr1={{2,3,4,5,6},10,5};
 
   Display(arr1);
-  printf("\n%d",Delete(&arr1,0));
+  printf("\n Element deleted is : %d",Delete(&arr1,0));
   Display(arr1);
 
   return 0;
