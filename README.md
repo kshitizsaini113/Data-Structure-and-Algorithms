@@ -8,13 +8,17 @@
 ### Implementation tree
 ```
 Data Structure and Algorithms
-|              
+|
+├── 000_BASICS     
+│   └── README.md                
 │
-├── .gitignore               
+├── .gitignore              
 │
 ├── CONTRIBUTING.md 
 │
 ├── Data Structure And Algorithm.png             
+|
+├── LICENSE
 │
 └── README.md                            
 ```
