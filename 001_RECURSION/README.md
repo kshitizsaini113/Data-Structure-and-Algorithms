@@ -37,16 +37,20 @@ T(n) = T(n-1) + 1
 So, the time complexity will be O(n).
 ```
 
+**Have a look at code [here.](001_Lets_Code_Recursion/main.c)**
+
 ### Static Variables in Recursion
 Static variables are allocated memory for once only so the same value is achieved after the calling is complete.
 
 ### Global Variables in Recursion
 Global variables and Static Variables behave similarly in Recursion.
 
+**  Have a look at code [here.](002_Static_and_Global_Variables/main.c)**
+
 ## Types of Recursion
 
 1. **Tail Recursion**
-    * If a recursice function is calling itself and that recursive call is the last statement of a function then it is *tail recursion.*
+    * If a recursiVe function is calling itself and that recursive call is the last statement of a function then it is *tail recursion.*
     * It means that all the operations will be performed at calling time only. No operation at returning time.
 
 *Loop v/s Tail Recursion*
@@ -112,3 +116,56 @@ void fun(int n) {
 
 3. **Tree Recursion**
     * If a recursive function is calling itself more than one time, then it is a *Tree recursion.*
+```
+void fun(int n) {
+    if(n>0) {
+        printf("%d", n);
+        fun(n-1);
+        fun(n-1);
+    }
+}
+```
+Tracing this function for call of fun(3) -> 3 2 1 1 2 1 1
+
+**Have a look at code [here.](003_Tree_Recursion/main.c)**
+
+4. **Indirect Recursion**
+    * In indirect recursion, there may be more than one function calling one another in a circular fashion.
+    * e.g.: First function call second, second call third and tird again call first, then it become indirect recursion.
+
+```
+void funA(int n) {
+    if (n>0) {
+        printf("%d", n);
+        funB(n-1);
+    }
+}
+
+void funB(int n) {
+    if (n>1) {
+        printf("%d", n);
+        funA(n/2);
+    }
+}
+```
+Tracing this function for call of funA(20) -> 20 19 9 8 4 3 1
+
+**Have a look at code [here.](004_Indirect_Recursion/main.c)**
+
+5. **Nested Recursion**
+    * In nested recursion, recursive function will pass parameter as a recursive call.
+    * A recursive call is taking a recursive call as the paameter. *(Recursion inside recursion)*
+
+```
+int fun(int n) {
+    if(n>100) {
+        return n-10;
+    }
+    else {
+        return fun(fun(n+11));
+    }
+}
+```
+Tracing this function for call of fun(95) -> fun(fun(95+11)) -> fun(fun(106)) -> fun(fun(96+11)) -> fun(fun(107)) -> fun(fun(97+11)) -> fun(fun(108)) -> fun(fun(98+11)) -> fun(fun(109)) -> fun(fun(99+11)) -> fun(fun(110)) -> fun(fun(100+11)) -> fun(fun(111)) -> fun(101) -> 91
+
+**Have a look at code [here.](005_Nested_Recursion/main.c)**

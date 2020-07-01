@@ -1,8 +1,9 @@
-<div align="center">
-  <img src="https://github.com/kshitizsaini113/Data-Structure-and-Algorithms/blob/master/Data%20Structure%20and%20Algorithm.png">
-</div>
+![Data_Structure_and_Algorithm](Data_Structure_and_Algorithm.png)
 
 # Data Structure and Algorithms
+
+1. [Basics](000_Basics)
+2. [Recursion](001_RECURSION)
 
 
 ### Implementation tree
