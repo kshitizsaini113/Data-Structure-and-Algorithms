@@ -3,3 +3,5 @@ cmake-build-debug
 CMakeLists.txt
 *.o
 *.exe
+*.bin
+.cph
