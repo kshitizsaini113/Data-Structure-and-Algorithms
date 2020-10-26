@@ -25,8 +25,11 @@ Data Structure and Algorithms
 |   ├── 003_Tree_Recursion            
 |   |   └── main.c
 |   |         
-│   └── README.md                
-│
+│   └── README.md 
+|
+|── 002_Stack            
+|      └── main.c
+| 
 ├── .gitignore              
 │
 ├── CONTRIBUTING.md 
