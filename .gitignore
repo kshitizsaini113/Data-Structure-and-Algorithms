@@ -5,3 +5,4 @@ CMakeLists.txt
 *.exe
 *.bin
 .cph
+*.out
