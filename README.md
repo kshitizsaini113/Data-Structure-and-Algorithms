@@ -28,10 +28,14 @@ Data Structure and Algorithms
 │   └── README.md                
 │
 ├── 999_Practice       --> Contains daywise Data Structure and Algorith Practice Questions
+│
+├── 999_Practice_Set_2 --> Contains daywise Data Structure and Algorith Practice Questions
 |
 ├── .gitignore              
 │
 ├── CONTRIBUTING.md 
+│
+├── Data Structure And Algorithm.pdf  --> Contains DSA Handwritten Notes
 │
 ├── Data Structure And Algorithm.png             
 |
