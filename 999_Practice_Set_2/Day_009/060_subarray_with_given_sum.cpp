@@ -1,4 +1,4 @@
-// Given a sorted array A of size N of non-negative integers, find a continuous subarray which adds
+// Given an unsorted array A of size N of non-negative integers, find a continuous subarray which adds
 // to a given number s.
 
 #include <iostream>
@@ -29,7 +29,7 @@ int main()
 
     if( sum == s )
     {
-        cout << i+1 << " - " << j << endl;
+        cout << i  << " - " << j-1 << endl;
         return 0;
     }
 
@@ -44,8 +44,8 @@ int main()
 
         if( sum == s )
         {
-            start = i + 1;
-            end = j + 1;
+            start = i;
+            end = j;
             break;
         }
         j++;
