@@ -23,6 +23,32 @@ int main()
 
     while(rowStart<=rowEnd && colStart<=colEnd)
     {
-        
+        for(int col=colStart; col<=colEnd; col++)
+        {
+            cout<<arr[rowStart][col]<<" ";
+        }
+        rowStart++;
+
+        for(int row=rowStart; row<=rowEnd; row++)
+        {
+            cout<<arr[row][colEnd]<<" ";
+        }
+        colEnd--;
+
+        for(int col=colEnd; col>=colStart; col--)
+        {
+            cout<<arr[rowEnd][col]<<" ";
+        }
+        rowEnd--;
+
+        for(int row=rowEnd; row>=rowStart; row--)
+        {
+            cout<<arr[row][colStart]<<" ";
+        }
+        colStart++;
     }
+
+    cout<<endl;
+
+    return 0;
 }
