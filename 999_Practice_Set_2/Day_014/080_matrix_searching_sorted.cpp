@@ -38,7 +38,7 @@ int main()
         }
         else
         {
-            c++;
+            r++;
         }
     }
 
