@@ -1,6 +1,5 @@
 # Data Structures and Algorithm
 
-* **Data** is the integral part of core applications or programs.
 
 * **Program** is a set of instructions performing operations on data to get some results.
 

@@ -5,6 +5,8 @@
 1. [Basics](000_Basics)
 2. [Recursion](001_RECURSION)
 
+999. [Practice](999_Practice)
+
 
 ### Implementation tree
 
