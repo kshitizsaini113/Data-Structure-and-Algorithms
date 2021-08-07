@@ -26,6 +26,7 @@ class Array
         void displayAllElements();
         void insertNElements(int n);
         void appendElement(int num);
+        void insertAtIndex(int index, int num);
 };
 
 void Array::insertAllElements()
@@ -91,6 +92,29 @@ void Array::appendElement(int num)
     }
 }
 
+void Array::insertAtIndex(int index, int num)
+{
+    if(index>length || index<0)
+    {
+        cout<<"Index not present";
+        return;
+    }
+    else if(length==size)
+    {
+        cout<<"Removig the element at index : "<<index<<endl;
+        array[index] = num;
+    }
+    else
+    {
+        for(int i=length; i>index; i--)
+        {
+            array[i] = array[i-1];
+        }
+        array[index] = num;
+        length++;
+    }
+}
+
 int main()
 {
     Array *arr;
@@ -105,6 +129,11 @@ int main()
     int n;
     cin>>n;
     arr->insertNElements(n);
+    arr->displayAllElements();
+
+    int num;
+    cin>>n>>num;
+    arr->insertAtIndex(n, num);
     arr->displayAllElements();
 
     cin>>n;
