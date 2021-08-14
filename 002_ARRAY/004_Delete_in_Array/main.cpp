@@ -115,7 +115,6 @@ void Array::insertAtIndex(int index, int num)
         length++;
     }
 }
-
 void Array::deleteAtIndex(int index)
 {
     if(index>=length || index<0)
