@@ -3,26 +3,33 @@
 
 int factorial(int n)
 {
-    if(n>1)
+    if(n == 0 || n == 1)
     {
-        return n * factorial(n-1);
-    }
-    else if (n>=0)
-    { 
         return 1;
+    }
+    else if (n>1)
+    { 
+        return n * factorial(n-1);
     }
     else
     {
-        exit(-1);
+        return -1;
     }
 }
 
 int main()
 {
     int n;
+    printf("Enter a non-negative number : ");
     scanf("%d", &n);
-
-    printf("Factorial of %d is : %d", n, factorial(n));
+    if(factorial(n) == -1)
+    {
+	printf("%d is a negative number. Factorial doesn't exist for a negative number!\n", n);
+    }
+    else
+    {
+	printf("Factorial of %d is : %d", n, factorial(n));
+    }
 
     return 0;
 }
