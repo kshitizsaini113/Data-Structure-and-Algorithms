@@ -1,0 +1,68 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+  int n1;
+  cin >> n1;
+  int* arr1 = new int[n1];
+  for (int i = 0; i < n1; i++)
+    cin >> arr1[i];
+
+  int n2;
+  cin >> n2;
+  int* arr2 = new int[n2];
+  for (int i = 0; i < n2; i++)
+    cin >> arr2[i];
+
+  int max = (n1 > n2) ? n1 : n2;
+  int* ans = new int[max];
+  int idx = max - 1;
+  n1--;
+  n2--;
+  int carry = 0, diff;
+
+  while (n1 >= 0 && n2 >= 0)
+  {
+    if (carry != 0)
+      arr2[n2]--;
+    carry = 0;
+    if (arr2[n2] < arr1[n1])
+    {
+      arr2[n2] += 10;
+      carry++;
+    }
+    diff = arr2[n2] - arr1[n1];
+    n1--;
+    n2--;
+    ans[idx--] = diff;
+  }
+  if (n2 >= 0)
+  {
+    for (int i = n2; i >= 0; i--)
+    {
+      if (carry != 0)
+      {
+        ans[i] = arr2[i] - 1;
+        carry = 0;
+        if (ans[i] < 0)
+        {
+          ans[i] += 10;
+          carry = 1;
+        }
+      }
+      else
+        ans[i] = arr2[i];
+    }
+  }
+
+  bool startzero = true;
+  for (int i = 0; i < max; i++)
+  {
+    if (ans[i] != 0)
+      startzero = false;
+    if (!startzero)
+      cout << ans[i] << endl;
+  }
+  return 0;
+}
